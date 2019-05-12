@@ -1,0 +1,9 @@
+Route::get('generator_builder', '\Layer\BaseBuilder\Controllers\BaseBuilderController@builder');
+
+Route::get('field_template', '\Layer\BaseBuilder\Controllers\BaseBuilderController@fieldTemplate');
+
+Route::get('relation_field_template', '\Layer\BaseBuilder\Controllers\BaseBuilderController@relationFieldTemplate');
+
+Route::post('generator_builder/generate', '\Layer\BaseBuilder\Controllers\BaseBuilderController@generate');
+
+Route::post('generator_builder/rollback', '\Layer\BaseBuilder\Controllers\BaseBuilderController@rollback');
